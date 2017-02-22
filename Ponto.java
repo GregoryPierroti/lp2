@@ -22,19 +22,18 @@ public class Ponto{
 
 
 	public  static void main(String[]args){
+		double catop,catad,resultado;
 		Ponto p1 =new  Ponto();
-			p1.setX(100);
-			p1.setY(200);
+			p1.setX(10);
+			p1.setY(20);
 		Ponto p2 = new Ponto();
-			p2.setX(150);
-			p2.setY(200);
-		Ponto p3= new Ponto();
-                        p3.setX(50);
-                        p3.setY(70);
-		p3=p1;
-		System.out.println(p1.getX());
-		System.out.println(p2.getY());
-		System.out.println(p3.getX());
-		System.out.println(p3.getY());
+			p2.setX(15);
+			p2.setY(20);
+		catop=p1.getY()-p2.getY();
+		catad=p1.getX()-p2.getX();
+		catop=catop*catop;
+		catad=catad*catad;
+		resultado=Math.sqrt(catop+catad);
+		System.out.println(resultado);
 	}
 }
